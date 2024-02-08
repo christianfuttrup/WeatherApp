@@ -90,7 +90,7 @@ export function weatherCodeToIconClass(code: number): string {
 	return weatherCodeToIcon[code] || 'fa-question';
 }
 
-export function calculateIconColor(weatherCode: number) {
+export function calculateIconColor(weatherCode: number): string {
 	if (snowyWeatherCodes.includes(weatherCode)) {
 		return 'text-white';
 	} else if (rainyWeatherCodes.includes(weatherCode)) {
@@ -100,4 +100,6 @@ export function calculateIconColor(weatherCode: number) {
 	} else if (foggyWeatherCodes.includes(weatherCode)) {
 		return 'text-gray-700';
 	}
+
+	return 'text-base-300';
 }
