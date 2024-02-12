@@ -1,16 +1,9 @@
 <script lang="ts">
-	import { weatherStore } from '$lib/stores/weatherStore';
 	import moment from 'moment';
 	import type { PageData } from './$types';
-	import { calculateIconColor } from '$lib/utils/weatherCodes';
 
 	export let data: PageData;
 </script>
-
-<!-- <div>
-		<h1 class="text-4xl font-bold text-center">BetterDevelopers</h1>
-		<p class="text-center">Don't get wet!</p>
-	</div> -->
 
 <div class="grid place-items-center h-screen">
 	<div class="w-4/5 mx-auto grid sm:grid-cols-1 gap-3 md:grid-cols-3">
